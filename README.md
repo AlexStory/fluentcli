@@ -41,3 +41,7 @@ The long flag of the argument you want to query.
 
 returns wether the given flag was entered by the user. Will look at all flag variations for the entered flag. ie `Is("help")`
 will look for '-h', '-?', or '--help'.
+
+## Todo
+- Testing, more of it. Unit tests, integration tests.
+- Flag types: need t parse more than just booleans. Want to parse single values and lists.
