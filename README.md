@@ -6,7 +6,7 @@ which was in turn inspired by [commander](https://github.com/commander-rb/comman
 
 ## Example
 
-```
+```csharp
 static void Main(string[] args)
     {
         var app = new FluentCli.Program();
@@ -22,3 +22,16 @@ static void Main(string[] args)
 
     }
 ```
+
+## Api
+
+#### AddFlag(string flags, string helpText)
+###### flags
+
+String of all flags that you want to correspond to this flag. Seperate them by commas.
+One flag must start with "--" and only one.
+
+###### helpText
+
+The text that is printed to the command line when a user asks for help.
+
