@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluentCli", "FluentCli\Flue
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleTest", "ConsoleTest\ConsoleTest.csproj", "{EEDE797E-94CC-466B-B8E9-E83FF3D1897B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestApi", "TestApi\TestApi.csproj", "{C9AF8634-2E72-46F4-83CC-DB0CF40BFCA3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{EEDE797E-94CC-466B-B8E9-E83FF3D1897B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EEDE797E-94CC-466B-B8E9-E83FF3D1897B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EEDE797E-94CC-466B-B8E9-E83FF3D1897B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9AF8634-2E72-46F4-83CC-DB0CF40BFCA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9AF8634-2E72-46F4-83CC-DB0CF40BFCA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9AF8634-2E72-46F4-83CC-DB0CF40BFCA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9AF8634-2E72-46F4-83CC-DB0CF40BFCA3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

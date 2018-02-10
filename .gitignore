@@ -1,4 +1,4 @@
-.idea
-.vs
-.bin
-.obj
+.idea/
+.vs/
+bin/
+obj/

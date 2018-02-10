@@ -88,8 +88,8 @@ namespace FluentCli
                             break;
                     }
 
-                    i++;
                 }
+                i++;
             }
 
             if (Is("help"))
