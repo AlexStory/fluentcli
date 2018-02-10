@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluentCli", "FluentCli\FluentCli.csproj", "{5EA02317-C7E4-4AEB-8835-301AB80B269E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleTest", "ConsoleTest\ConsoleTest.csproj", "{EEDE797E-94CC-466B-B8E9-E83FF3D1897B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5EA02317-C7E4-4AEB-8835-301AB80B269E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EA02317-C7E4-4AEB-8835-301AB80B269E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EA02317-C7E4-4AEB-8835-301AB80B269E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EA02317-C7E4-4AEB-8835-301AB80B269E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEDE797E-94CC-466B-B8E9-E83FF3D1897B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEDE797E-94CC-466B-B8E9-E83FF3D1897B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEDE797E-94CC-466B-B8E9-E83FF3D1897B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEDE797E-94CC-466B-B8E9-E83FF3D1897B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

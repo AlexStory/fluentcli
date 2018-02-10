@@ -1,0 +1,8 @@
+/Users/johnstory/test/cs/FluentCli/FluentCli/bin/Debug/netstandard2.0/FluentCli.deps.json
+/Users/johnstory/test/cs/FluentCli/FluentCli/bin/Debug/netstandard2.0/FluentCli.dll
+/Users/johnstory/test/cs/FluentCli/FluentCli/bin/Debug/netstandard2.0/FluentCli.pdb
+/Users/johnstory/test/cs/FluentCli/FluentCli/obj/Debug/netstandard2.0/FluentCli.csproj.CoreCompileInputs.cache
+/Users/johnstory/test/cs/FluentCli/FluentCli/obj/Debug/netstandard2.0/FluentCli.AssemblyInfoInputs.cache
+/Users/johnstory/test/cs/FluentCli/FluentCli/obj/Debug/netstandard2.0/FluentCli.AssemblyInfo.cs
+/Users/johnstory/test/cs/FluentCli/FluentCli/obj/Debug/netstandard2.0/FluentCli.dll
+/Users/johnstory/test/cs/FluentCli/FluentCli/obj/Debug/netstandard2.0/FluentCli.pdb
