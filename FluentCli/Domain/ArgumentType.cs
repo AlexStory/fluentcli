@@ -2,6 +2,6 @@
 {
     internal enum ArgumentType
     {
-        Flag
+        Flag, Once
     }
 }
