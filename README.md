@@ -35,6 +35,16 @@ One flag must start with "--" and only one.
 
 The text that is printed to the command line when a user asks for help.
 
+#### AddOnce(string flags, string helpText)
+###### flags
+
+String of all flags that you want to correspond to this flag. Seperate them by commas.
+One flag must start with "--" and only one.
+
+###### helpText
+
+The text that is printed to the command line when a user asks for help.
+
 #### Is(string flagName)
 ###### flagName
 The long flag of the argument you want to query.
@@ -42,8 +52,15 @@ The long flag of the argument you want to query.
 returns wether the given flag was entered by the user. Will look at all flag variations for the entered flag. ie `Is("help")`
 will look for '-h', '-?', or '--help'.
 
+#### Get(string flagName)
+###### flagName
+The long flag of the argument you want to query. Will look at all flag variations for the entered flag. ie `Is("help")`
+will look for '-h', '-?', or '--help'.
+
+returns the argument entered after the flag. 
+
 ## Todo
 - Testing, more of it. Unit tests, integration tests.
 - Better Docs.
-- Flag types: need to parse more than just booleans. Want to parse single values and lists.
+- Flag types: need to parse more than just booleans. Want to parse ~single values~ and lists.
 - Possibly convert scalar types to take even more load off of users.
