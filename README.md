@@ -76,4 +76,4 @@ returns the argument entered after the flag.
 - Better Docs.
 - Flag types: need to parse more than just booleans. Want to parse ~single values~ and lists.
 - Possibly convert scalar types to take even more load off of users.
-- Refactoring main program method. Too much in it. and Run() method could be lighter.
+- Refactoring main program file. Too much in it. and Run() method could be lighter.
