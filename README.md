@@ -18,11 +18,11 @@ static void Main(string[] args)
         .AddOnce("-n, --name", "prints your name")
         .Run(args);
 
-    if (app.Is("testing") {
+    if (app.Is("testing")) {
       Console.WriteLine("Tested!");
     }
     
-    if (app.Get("name") != null {
+    if (app.Get("name") != null) {
       Console.WriteLine($"Your name is {app.Get("name")}");
     }
 
