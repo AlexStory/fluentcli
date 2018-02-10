@@ -13,11 +13,17 @@ static void Main(string[] args)
 
     app
         .Version("0.0.1")
+        .PrintErrors()
         .AddFlag("-t, -test, --testing", "runs a test")
+        .AddOnce("-n, --name", "prints your name")
         .Run(args);
 
     if (app.Is("testing") {
       Console.WriteLine("Tested!");
+    }
+    
+    if (app.Get("name") != null {
+      Console.WriteLine($"Your name is {app.Get("name")}");
     }
 
 }
