@@ -1,6 +1,6 @@
 # FluentCli
 
-A .Net fluent Api for writing command line applications. Heavily inspired by [commander](https://github.com/tj/commander.js), 
+A .NET fluent Api for writing command line applications. Heavily inspired by [commander](https://github.com/tj/commander.js), 
 which was in turn inspired by [commander](https://github.com/commander-rb/commander)
 
 
