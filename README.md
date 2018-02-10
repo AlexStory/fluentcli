@@ -44,4 +44,6 @@ will look for '-h', '-?', or '--help'.
 
 ## Todo
 - Testing, more of it. Unit tests, integration tests.
-- Flag types: need t parse more than just booleans. Want to parse single values and lists.
+- Better Docs.
+- Flag types: need to parse more than just booleans. Want to parse single values and lists.
+- Possibly convert scalar types to take even more load off of users.
