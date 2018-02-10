@@ -1,6 +1,6 @@
 # FluentCli
 
-A .Net fluent Api for writing command line applications. Heavily inspired by [commander](https://github.com/tj/commander.js), 
+A .NET fluent Api for writing command line applications. Heavily inspired by [commander](https://github.com/tj/commander.js), 
 which was in turn inspired by [commander](https://github.com/commander-rb/commander)
 
 
@@ -60,8 +60,8 @@ will look for '-h', '-?', or '--help'.
 
 ### Get(string flagName)
 ###### flagName
-The long flag of the argument you want to query. Will look at all flag variations for the entered flag. ie `Is("help")`
-will look for '-h', '-?', or '--help'.
+The long flag of the argument you want to query. Will look at all flag variations for the entered flag. ie `Get("argument")`
+will look for '-a', '-arg', or '--argument'.
 
 ### Version(string version, [string flags])
 Shortcut for adding a version argument. defaults to "-V" and "--version".
@@ -76,3 +76,5 @@ returns the argument entered after the flag.
 - Better Docs.
 - Flag types: need to parse more than just booleans. Want to parse ~single values~ and lists.
 - Possibly convert scalar types to take even more load off of users.
+- Refactoring main program file. Too much in it. and Run() method could be lighter.
+- Multiflag ie. "-abc" can be the same as "-a -b -c"
