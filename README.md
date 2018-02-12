@@ -78,3 +78,4 @@ returns the argument entered after the flag.
 - Possibly convert scalar types to take even more load off of users.
 - Refactoring main program file. Too much in it. and Run() method could be lighter.
 - Multiflag ie. "-abc" can be the same as "-a -b -c"
+- Paramaters for arguments in help text. ie instead of "-n" get "-n [name]"
