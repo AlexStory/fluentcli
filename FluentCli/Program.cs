@@ -13,6 +13,7 @@ namespace FluentCli
         private List<Argument> _arguments = new List<Argument>();
         private Dictionary<string, bool> _flags = new Dictionary<string, bool>();
         private Dictionary<string, string> _argOnce = new Dictionary<string, string>();
+        private List<string> _remaining = new List<string>();
         private bool _isParsing;
         private bool _printErrors;
 
@@ -72,7 +73,10 @@ namespace FluentCli
                 {
                     if (!args[i].StartsWith("-"))
                     {
-                        HandleError($"Unexpected value: {args[i]}");
+                        _remaining.Add(args[i]);
+                        i ++;
+                        continue;
+                        // HandleError($"Unexpected value: {args[i]}");
                     }
                     
                     var arg = GetByFlag(args[i]);
@@ -112,6 +116,10 @@ namespace FluentCli
         public string Get(string name)
         {
             return _argOnce[name];
+        }
+
+        public List<string> Arguments(){
+            return _remaining;
         }
 
         public Program PrintErrors()

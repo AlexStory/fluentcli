@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using FluentCli;
 
 namespace ConsoleTest
@@ -23,6 +24,10 @@ namespace ConsoleTest
             if (app.Get("arg") != null)
             {
                 Console.WriteLine($"The arg was: {app.Get("arg")}");
+            }
+
+            if (app.Arguments().Any()){
+                app.Arguments().ForEach(x => Console.WriteLine($"arg: {x}"));
             }
         }
     }

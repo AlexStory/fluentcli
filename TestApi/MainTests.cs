@@ -31,6 +31,14 @@ namespace TestApi
                 .Run(new string[] { }));
 
         }
+
+        [Fact]
+        public void AddsFlaglessToArguments()
+        {
+            var app = App()
+            .Run(new string[] {"apples"});
+            Assert.Equal(app.Arguments()[0], "apples");
+        }
         
         private Program App()
         {

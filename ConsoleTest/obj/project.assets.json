@@ -686,17 +686,17 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/johnstory/test/cs/FluentCli/ConsoleTest/ConsoleTest.csproj",
+      "projectUniqueName": "/Users/johnstory/test/csharp/FluentCli/ConsoleTest/ConsoleTest.csproj",
       "projectName": "ConsoleTest",
-      "projectPath": "/Users/johnstory/test/cs/FluentCli/ConsoleTest/ConsoleTest.csproj",
+      "projectPath": "/Users/johnstory/test/csharp/FluentCli/ConsoleTest/ConsoleTest.csproj",
       "packagesPath": "/Users/johnstory/.nuget/packages/",
-      "outputPath": "/Users/johnstory/test/cs/FluentCli/ConsoleTest/obj/",
+      "outputPath": "/Users/johnstory/test/csharp/FluentCli/ConsoleTest/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/Users/johnstory/.config/NuGet/NuGet.Config"
+        "/Users/johnstory/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
@@ -707,8 +707,8 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "/Users/johnstory/test/cs/FluentCli/FluentCli/FluentCli.csproj": {
-              "projectPath": "/Users/johnstory/test/cs/FluentCli/FluentCli/FluentCli.csproj"
+            "/Users/johnstory/test/csharp/FluentCli/FluentCli/FluentCli.csproj": {
+              "projectPath": "/Users/johnstory/test/csharp/FluentCli/FluentCli/FluentCli.csproj"
             }
           }
         }
@@ -723,7 +723,6 @@
       "netcoreapp2.0": {
         "dependencies": {
           "Microsoft.NETCore.App": {
-            "suppressParent": "All",
             "target": "Package",
             "version": "[2.0.0, )",
             "autoReferenced": true

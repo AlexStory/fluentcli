@@ -63,6 +63,9 @@ will look for '-h', '-?', or '--help'.
 The long flag of the argument you want to query. Will look at all flag variations for the entered flag. ie `Get("argument")`
 will look for '-a', '-arg', or '--argument'.
 
+### Arguments()
+Returns all of the arguments passed into the program not corresponding to a flag.
+
 ### Version(string version, [string flags])
 Shortcut for adding a version argument. defaults to "-V" and "--version".
 
