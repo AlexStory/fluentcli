@@ -1,5 +1,8 @@
 [FluentCli](http://alexstory.github.io/fluentcli)
+
 [Nuget](https://www.nuget.org/packages/FluentCli/)
+
+`dotnet add package fluentcli`
 
 # FluentCli
 
