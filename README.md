@@ -2,7 +2,7 @@
 
 [Nuget](https://www.nuget.org/packages/FluentCli/)
 
-[![Build Status](https://travis-ci.org/alexstory/fluentcli.png?branch=master)](https://travis-ci.org/alexstory/fluentcli)
+[![Build Status](https://travis-ci.org/AlexStory/fluentcli.png?branch=master)](https://travis-ci.org/AlexStory/fluentcli)
 
 `dotnet add package fluentcli`
 
