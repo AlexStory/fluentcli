@@ -2,6 +2,8 @@
 
 [Nuget](https://www.nuget.org/packages/FluentCli/)
 
+`dotnet add package fluentcli`
+
 # FluentCli
 
 A .NET fluent Api for writing command line applications. Heavily inspired by [commander](https://github.com/tj/commander.js), 
