@@ -14,6 +14,7 @@ namespace ConsoleTest
                 .Version("0.0.1")
                 .PrintErrors()
                 .AddOnce("-a, --arg", "Argument to run")
+                .AddFlag("-b, --bool", "boolean")
                 .Run(args);
 
             if (app.Is("version"))

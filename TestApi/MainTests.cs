@@ -39,6 +39,16 @@ namespace TestApi
             .Run(new string[] {"apples"});
             Assert.Equal(app.Arguments()[0], "apples");
         }
+
+        [Fact]
+        public void ArgumentsCanBeSeparated(){
+            var app = App().AddFlag("-b, --bool", "boolean")
+            .Run(new string[] {"apples", "-b", "bananas"});
+            //Console.WriteLine(app.Arguments()[1]);
+            Console.WriteLine(app.Arguments()[0]);
+            Assert.True(app.Arguments().Contains("apples"));
+            Assert.True(app.Arguments().Contains("bananas"));
+        }
         
         private Program App()
         {
