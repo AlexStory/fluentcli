@@ -197,7 +197,7 @@
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
       },
-      "FluentCli/1.1.0": {
+      "FluentCli/1.2.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "compile": {
@@ -667,7 +667,7 @@
         "netstandard.library.nuspec"
       ]
     },
-    "FluentCli/1.1.0": {
+    "FluentCli/1.2.0": {
       "type": "project",
       "path": "../FluentCli/FluentCli.csproj",
       "msbuildProject": "../FluentCli/FluentCli.csproj"
@@ -675,7 +675,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
-      "FluentCli >= 1.1.0",
+      "FluentCli >= 1.2.0",
       "Microsoft.NETCore.App >= 2.0.0"
     ]
   },

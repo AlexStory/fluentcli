@@ -13,16 +13,21 @@ namespace ConsoleTest
                 .PrintErrors()
                 .AddFlag("-t, -test, --testing", "runs a test")
                 .AddOnce("-n, --name", "prints your name")
+                .AddOnce("-l, --list-this", "lists the thing")
                 .Run(args)
                 .Build();
 
-            if (app.testing) {
+            if (app.Testing) {
                 Console.WriteLine("Tested!");
             }
             
-            if (app.name != null) {
-                Console.WriteLine($"Your name is {app.name}");
+            if (app.Name != null) {
+                Console.WriteLine($"Your name is {app.Name}");
             }
+
+            if (app.ListThis != null) {
+                Console.WriteLine($"Listing {app.ListThis}");
+            } 
         }
     }
 }

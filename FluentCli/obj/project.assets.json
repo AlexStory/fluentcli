@@ -180,13 +180,13 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
-    "version": "1.1.0",
+    "version": "1.2.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\astory\\test\\csharp\\fluentcli\\FluentCli\\FluentCli.csproj",
+      "projectUniqueName": "C:\\Users\\astory\\test\\csharp\\fluentcli\\FluentCli\\FluentCli.csproj",
       "projectName": "FluentCli",
-      "projectPath": "c:\\Users\\astory\\test\\csharp\\fluentcli\\FluentCli\\FluentCli.csproj",
+      "projectPath": "C:\\Users\\astory\\test\\csharp\\fluentcli\\FluentCli\\FluentCli.csproj",
       "packagesPath": "C:\\Users\\astory\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\astory\\test\\csharp\\fluentcli\\FluentCli\\obj\\",
+      "outputPath": "C:\\Users\\astory\\test\\csharp\\fluentcli\\FluentCli\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -9,5 +9,9 @@ namespace FluentCli.Utility
         {
             return input.Split(',').Select(x => x.Trim()).ToList();
         }
+
+        public static string SanitizeName(string name) {
+            return string.Join("", name.Split('-').Select(x => $"{x.First().ToString().ToUpper()}{x.Substring(1)}"));
+        }
     }
 }

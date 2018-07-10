@@ -21,15 +21,20 @@ static void Main(string[] args) {
         .Version("0.0.1")
         .PrintErrors()
         .AddFlag("-t, -test, --testing", "runs a test")
+        .AddFlag("-l, -list, --list-all", "list them all")
         .AddOnce("-n, --name", "prints your name")
         .Run(args)
         .Build();
 
-    if (app.testing) {
+    if (app.Testing) {
         Console.WriteLine("Tested!");
     }
+
+    if (app.ListAll) {
+        Console.WriteLine("Listing them all!");
+    }
     
-    if (app.name != null) {
+    if (app.Name != null) {
         Console.WriteLine($"Your name is {app.name}");
     }
 

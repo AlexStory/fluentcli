@@ -15,7 +15,7 @@ namespace FluentCli
         private Dictionary<string, bool> _flags = new Dictionary<string, bool>();
         private Dictionary<string, string> _argOnce = new Dictionary<string, string>();
         private List<string> _remaining = new List<string>();
-        private bool _isParsing;
+        private bool _isParsing = false;
         private bool _printErrors;
         private dynamic _results = new ExpandoObject();
 
@@ -185,11 +185,11 @@ namespace FluentCli
         }
 
         private void SetResult(string key, object value) {
-            (_results as IDictionary<string, object>).Add(key, value);
+            (_results as IDictionary<string, object>).Add(SanitizeName(key), value);
         }
 
         private void UpdateResult(string key, object value) {
-            (_results as IDictionary<string, object>)[key] = value;
+            (_results as IDictionary<string, object>)[SanitizeName(key)] = value;
         }
 
 
