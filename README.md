@@ -41,6 +41,12 @@ static void Main(string[] args) {
 }
 ```
 
+## Notes
+
+Calling .Build() after .Run(args) returns an objects with all of the long-form flag names added as c# style names. ie: in the example above the object will have app.Testing, app.ListAll, and app.Name, because of the flags `--testing`, `--list-all`, and `--name`.
+
+Also the interface allows combining of short flags, so that the above example could be called with `-tl` instead of `-t -l`
+
 ## Api
 
 ### AddFlag(string flags, string helpText)
@@ -91,5 +97,4 @@ returns the argument entered after the flag.
 - Better Docs.
 - Possibly convert scalar types to take even more load off of users.
 - Refactoring main program file. Too much in it. and Run() method could be lighter.
-- Multiflag ie. "-abc" can be the same as "-a -b -c"
 - Paramaters for arguments in help text. ie instead of "-n" get "-n [name]"

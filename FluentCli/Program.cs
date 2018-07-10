@@ -23,7 +23,6 @@ namespace FluentCli
         public Program()
         {
             AddFlag("-h, -?, --help" ,"Prints this text");
-           // _results.SetResult("Arguments", new List<string>());
         }
         
         public Program Version(string version, string flags = "-V, --version")
@@ -83,12 +82,10 @@ namespace FluentCli
                         _remaining.Add(args[i]);
                         i ++;
                         continue;
-                        // HandleError($"Unexpected value: {args[i]}");
                     }
                     
-                    var arg = GetByFlag(args[i]);
-                    
-                    switch (arg.type)
+                    var arg = GetByFlag(args[i]);                    
+                    switch (arg?.type)
                     {
                         case ArgumentType.Flag:
                             _flags[arg.Name] = true;
@@ -98,6 +95,15 @@ namespace FluentCli
                             if (ValidateArgAvailable(args, i + 1)) return this; 
                             _argOnce[arg.Name] = args[++i];
                             UpdateResult(arg.Name, args[i]);
+                            break;
+                        case null:
+                            var flags = args[i].Trim('-').ToCharArray().Select(x => GetByFlag($"-{x}"));
+                            if (flags.All(x => x != null && x.type == ArgumentType.Flag)){
+                                foreach(var f in flags) {
+                                    _flags[f.Name] = true;
+                                    UpdateResult(f.Name, true);
+                                }
+                            }
                             break;
                     }
 
