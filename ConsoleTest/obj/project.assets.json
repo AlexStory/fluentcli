@@ -680,35 +680,37 @@
     ]
   },
   "packageFolders": {
-    "/Users/johnstory/.nuget/packages/": {},
-    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
+    "C:\\Users\\astory\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/johnstory/test/csharp/FluentCli/ConsoleTest/ConsoleTest.csproj",
+      "projectUniqueName": "C:\\Users\\astory\\test\\csharp\\fluentcli\\ConsoleTest\\ConsoleTest.csproj",
       "projectName": "ConsoleTest",
-      "projectPath": "/Users/johnstory/test/csharp/FluentCli/ConsoleTest/ConsoleTest.csproj",
-      "packagesPath": "/Users/johnstory/.nuget/packages/",
-      "outputPath": "/Users/johnstory/test/csharp/FluentCli/ConsoleTest/obj/",
+      "projectPath": "C:\\Users\\astory\\test\\csharp\\fluentcli\\ConsoleTest\\ConsoleTest.csproj",
+      "packagesPath": "C:\\Users\\astory\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\astory\\test\\csharp\\fluentcli\\ConsoleTest\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/Users/johnstory/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\astory\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "/Users/johnstory/test/csharp/FluentCli/FluentCli/FluentCli.csproj": {
-              "projectPath": "/Users/johnstory/test/csharp/FluentCli/FluentCli/FluentCli.csproj"
+            "C:\\Users\\astory\\test\\csharp\\fluentcli\\FluentCli\\FluentCli.csproj": {
+              "projectPath": "C:\\Users\\astory\\test\\csharp\\fluentcli\\FluentCli\\FluentCli.csproj"
             }
           }
         }

@@ -8,27 +8,20 @@ namespace ConsoleTest
     {
         static void Main(string[] args)
         {
-            var app = new FluentCli.Program();
-                
-            app
+            var app = new FluentCli.Program()
                 .Version("0.0.1")
                 .PrintErrors()
-                .AddOnce("-a, --arg", "Argument to run")
-                .AddFlag("-b, --bool", "boolean")
-                .Run(args);
+                .AddFlag("-t, -test, --testing", "runs a test")
+                .AddOnce("-n, --name", "prints your name")
+                .Run(args)
+                .Build();
 
-            if (app.Is("version"))
-            {
-                Console.WriteLine("version queried");
+            if (app.testing) {
+                Console.WriteLine("Tested!");
             }
-
-            if (app.Get("arg") != null)
-            {
-                Console.WriteLine($"The arg was: {app.Get("arg")}");
-            }
-
-            if (app.Arguments().Any()){
-                app.Arguments().ForEach(x => Console.WriteLine($"arg: {x}"));
+            
+            if (app.name != null) {
+                Console.WriteLine($"Your name is {app.name}");
             }
         }
     }

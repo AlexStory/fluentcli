@@ -15,23 +15,22 @@ which was in turn inspired by [commander](https://github.com/commander-rb/comman
 ## Example
 
 ```csharp
-static void Main(string[] args)
-{
-    var app = new FluentCli.Program();
+static void Main(string[] args) {
 
-    app
+    var app = new FluentCli.Program()
         .Version("0.0.1")
         .PrintErrors()
         .AddFlag("-t, -test, --testing", "runs a test")
         .AddOnce("-n, --name", "prints your name")
-        .Run(args);
+        .Run(args)
+        .Build();
 
-    if (app.Is("testing")) {
-      Console.WriteLine("Tested!");
+    if (app.testing) {
+        Console.WriteLine("Tested!");
     }
     
-    if (app.Get("name") != null) {
-      Console.WriteLine($"Your name is {app.Get("name")}");
+    if (app.name != null) {
+        Console.WriteLine($"Your name is {app.name}");
     }
 
 }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Dynamic;
 using System.Linq;
 using System.Runtime.InteropServices.ComTypes;
 using FluentCli.Domain;
@@ -16,11 +17,13 @@ namespace FluentCli
         private List<string> _remaining = new List<string>();
         private bool _isParsing;
         private bool _printErrors;
+        private dynamic _results = new ExpandoObject();
 
 
         public Program()
         {
             AddFlag("-h, -?, --help" ,"Prints this text");
+           // _results.SetResult("Arguments", new List<string>());
         }
         
         public Program Version(string version, string flags = "-V, --version")
@@ -43,9 +46,12 @@ namespace FluentCli
             };
 
             _flags[argument.Name] = false;
+            SetResult(argument.Name, false);
             _arguments.Add(argument);
             return this;
         }
+
+
 
         public Program AddOnce(string flags, string helpText)
         {
@@ -60,6 +66,7 @@ namespace FluentCli
             };
 
             _argOnce[argument.Name] = null;
+            SetResult(argument.Name, null);
             _arguments.Add(argument);
             return this;
         }
@@ -85,16 +92,19 @@ namespace FluentCli
                     {
                         case ArgumentType.Flag:
                             _flags[arg.Name] = true;
+                            UpdateResult(arg.Name, true);
                             break;
                         case ArgumentType.Once:
                             if (ValidateArgAvailable(args, i + 1)) return this; 
                             _argOnce[arg.Name] = args[++i];
+                            UpdateResult(arg.Name, args[i]);
                             break;
                     }
 
                 }
                 i++;
             }
+            SetResult("Arguments", _remaining);
 
             if (Is("help"))
             {
@@ -128,6 +138,11 @@ namespace FluentCli
             return this;
         }
 
+        public dynamic Build() {
+            return _results;
+        }
+
+        // PRIVATE METHODS
         private void HandleError(string ErrorString)
         {
             if (_printErrors)
@@ -167,6 +182,14 @@ namespace FluentCli
             result = true;
 
             return result;
+        }
+
+        private void SetResult(string key, object value) {
+            (_results as IDictionary<string, object>).Add(key, value);
+        }
+
+        private void UpdateResult(string key, object value) {
+            (_results as IDictionary<string, object>)[key] = value;
         }
 
 

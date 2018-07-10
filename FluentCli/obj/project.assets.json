@@ -30,7 +30,7 @@
   },
   "libraries": {
     "Microsoft.NETCore.Platforms/1.1.0": {
-      "sha512": "+PH+Izeo5hD+HjblN6fD6oRYERlZ3Gz850lyP9yGEcLO3OOCGHAogezsH30yhI22qCUshXCXFdcMgoyeCzPY+g==",
+      "sha512": "kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A==",
       "type": "package",
       "path": "microsoft.netcore.platforms/1.1.0",
       "files": [
@@ -176,28 +176,30 @@
     ]
   },
   "packageFolders": {
-    "/Users/johnstory/.nuget/packages/": {},
-    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
+    "C:\\Users\\astory\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.1.0",
     "restore": {
-      "projectUniqueName": "/Users/johnstory/test/csharp/FluentCli/FluentCli/FluentCli.csproj",
+      "projectUniqueName": "c:\\Users\\astory\\test\\csharp\\fluentcli\\FluentCli\\FluentCli.csproj",
       "projectName": "FluentCli",
-      "projectPath": "/Users/johnstory/test/csharp/FluentCli/FluentCli/FluentCli.csproj",
-      "packagesPath": "/Users/johnstory/.nuget/packages/",
-      "outputPath": "/Users/johnstory/test/csharp/FluentCli/FluentCli/obj/",
+      "projectPath": "c:\\Users\\astory\\test\\csharp\\fluentcli\\FluentCli\\FluentCli.csproj",
+      "packagesPath": "C:\\Users\\astory\\.nuget\\packages\\",
+      "outputPath": "c:\\Users\\astory\\test\\csharp\\fluentcli\\FluentCli\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/Users/johnstory/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\astory\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
