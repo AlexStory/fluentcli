@@ -11,8 +11,9 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("FluentCli")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("atory")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
+[assembly: System.Reflection.AssemblyDescriptionAttribute(" Fluent Api for building CLI apps.")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.3.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.3.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("FluentCli")]
