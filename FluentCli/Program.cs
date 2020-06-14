@@ -11,11 +11,13 @@ namespace FluentCli
     public class Program
     {
         private string _version;
+        private string _name;
         private List<Argument> _arguments = new List<Argument>();
         private Dictionary<string, bool> _flags = new Dictionary<string, bool>();
         private Dictionary<string, string> _argOnce = new Dictionary<string, string>();
         private List<string> _remaining = new List<string>();
         private bool _isParsing = false;
+        private bool _usedVersion = false;
         private bool _printErrors;
         private dynamic _results = new ExpandoObject();
 
@@ -28,7 +30,14 @@ namespace FluentCli
         public Program Version(string version, string flags = "-V, --version")
         {
             _version = version;
+            _usedVersion = true;
             AddFlag(flags, "Prints the current version of the application");
+            return this;
+        }
+
+        public Program AppName(string name)
+        {
+            _name = name;
             return this;
         }
 
@@ -114,11 +123,23 @@ namespace FluentCli
 
             if (Is("help"))
             {
+                if (_name != null) {
+                    Console.Write(_name + " ");
+                }
+                if(_usedVersion) {
+                    Console.Write(_version);
+                }
+                Console.Write("\n");
                 foreach (var arg in _arguments)
                 {
                     var argStrings = string.Join(",", arg.Flags); 
                     Console.WriteLine($"{argStrings}\t\t{arg.HelpText}");
                 }
+            }
+
+            if (_usedVersion && Is("version"))
+            {
+                Console.WriteLine(_version);
             }
             
             return this;

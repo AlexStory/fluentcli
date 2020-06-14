@@ -9,6 +9,7 @@ namespace ConsoleTest
         static void Main(string[] args)
         {
             var app = new FluentCli.Program()
+                .AppName("Console Test")
                 .Version("0.0.1")
                 .PrintErrors()
                 .AddFlag("-t, -test, --testing", "runs a test")

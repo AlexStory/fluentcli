@@ -1,6 +1,6 @@
 .idea/
 .vs/
-bin/
-obj/
+bin
+obj
 .vscode/
-**/bin/
+**/bin
