@@ -45,27 +45,32 @@ static void Main(string[] args) {
 
 ## Notes
 
-Calling .Build() after .Run(args) returns an objects with all of the long-form flag names added as c# style names. ie: in the example above the object will have app.Testing, app.ListAll, and app.Name, because of the flags `--testing`, `--list-all`, and `--name`.
+Calling .Build() after .Run(args) returns an object with all of the long-form flag names added as c# style names. ie: in the example above the object will have app.Testing, app.ListAll, and app.Name, because of the flags `--testing`, `--list-all`, and `--name`.
 
 Also the interface allows combining of short flags, so that the above example could be called with `-tl` instead of `-t -l`
 
 ## Api
 
 ### AddFlag(string flags, string helpText)
+
+Adds a boolean flag to the application. ie: `-h` or `--version`
+
 ###### flags
 
 String of all flags that you want to correspond to this flag. Seperate them by commas.
-One flag must start with "--" and only one.
+One flag must start with "\-\-" and only one.
 
 ###### helpText
 
 The text that is printed to the command line when a user asks for help.
 
 ### AddOnce(string flags, string helpText)
+Adds a flag that takes a single argument. ie `-o myfile.txt`
+
 ###### flags
 
 String of all flags that you want to correspond to this flag. Seperate them by commas.
-One flag must start with "--" and only one.
+One flag must start with "\-\-" and only one.
 
 ###### helpText
 
