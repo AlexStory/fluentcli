@@ -2,12 +2,12 @@
   <PropertyGroup>
     <Title>FluentCli</Title>
     <Description> Fluent Api for building CLI apps.</Description>
-    <PackageLicenseUrl>https://github.com/AlexStory/fluentcli/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>https://alexstory.github.io/fluentcli</PackageProjectUrl>
     <PackageTags>cli;fluent;console;command line;</PackageTags>
     <RepositoryUrl>https://github.com/AlexStory/fluentcli</RepositoryUrl>
     <TargetFramework>netstandard2.0</TargetFramework>
     <Version>1.3.1</Version>
-    <Authors>atory</Authors>
+    <Authors>astory</Authors>
   </PropertyGroup>
 </Project>
