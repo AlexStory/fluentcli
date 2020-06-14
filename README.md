@@ -20,6 +20,7 @@ which was in turn inspired by [commander](https://github.com/commander-rb/comman
 static void Main(string[] args) {
 
     var app = new FluentCli.Program()
+        .AppName("Example Application")
         .Version("0.0.1")
         .PrintErrors()
         .AddFlag("-t, -test, --testing", "runs a test")
